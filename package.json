@@ -1,0 +1,29 @@
+{
+  "name": "nodejs-cert",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nodejscert": "cd nodejscert && npm start",
+    "server":"nodemon server.js",
+    "dev":"concurrently --kill-others-on-fail \"npm run nodejscert\" \"npm run server\"",
+    "nodejscert:build":"cd nodejscert && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akash11144/nodejs-cert.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akash11144/nodejs-cert/issues"
+  },
+  "homepage": "https://github.com/Akash11144/nodejs-cert#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
